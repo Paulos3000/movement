@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom';
 import './styles/app.scss';
 
 // Main Component...
-import MainContainer from './components/MainContainer';
+import Main from './components/Main';
 
 window.onload = () => {
-   ReactDOM.render(<MainContainer onUpdate={() => window.scrollTo(0, 0)} />,
+   ReactDOM.render(<Main onUpdate={() => window.scrollTo(0, 0)} />,
    document.getElementById('main'));
 };

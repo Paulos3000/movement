@@ -6,5 +6,36 @@
 -------------------------------------*/
 $pink: #e90052;
 
-/* Base Styles
+/* Standard Botstrap Fixes
 -------------------------------------*/
+
+.jumbotron {
+   margin: 0;
+   h1 {
+      text-align: center;
+   }
+}
+
+.navbar {
+   text-align: center;
+   margin: 0;
+}
+
+/* Custom Styles
+-------------------------------------*/
+
+.section-one { background-color: rgb(130, 191, 255); }
+.section-two { background-color: rgb(223, 82, 62); }
+.section-three { background-color: rgb(255, 184, 0); }
+
+.section {
+   height: 600px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section-title {
+   max-width: 50%;
+   color: #fff;
+}
