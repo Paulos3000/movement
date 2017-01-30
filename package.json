@@ -1,9 +1,9 @@
 {
-  "name": "boilerplate3000",
+  "name": "movement",
   "version": "1.0.0",
-  "description": "Example of a data driven re-usable player stats card component.",
+  "description": "Movement prototype.",
   "main": "src/server.js",
-  "repository": "https://github.com/Paulos3000/boilerplate3000",
+  "repository": "https://github.com/Paulos3000/pure-boilerplate",
   "scripts": {
     "start": "NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015,stage-2' src/server.js",
     "start-dev": "npm run start-dev-hmr",
@@ -32,8 +32,10 @@
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.3.1",
+    "react-lorem-component": "^0.11.0",
     "react-router": "^2.6.1",
-    "react-scroll": "^1.4.5"
+    "react-scroll": "^1.4.5",
+    "react-scrollchor": "^2.2.0"
   },
   "devDependencies": {
     "css-loader": "^0.26.1",

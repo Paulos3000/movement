@@ -1,16 +1,5 @@
 import React from 'react'
-
-// var Scroll  = require('react-scroll');
-//
-// var Link       = Scroll.Link;
-// var Element    = Scroll.Element;
-// var Events     = Scroll.Events;
-// var scroll     = Scroll.animateScroll;
-// var scrollSpy  = Scroll.scrollSpy;
-//
-// const handleSetActive = (to) => {
-//    console.log(to);
-// }
+import Scrollchor from 'react-scrollchor';
 
 const Navbar = () => {
 
@@ -19,13 +8,13 @@ const Navbar = () => {
          <div className="container-fluid">
             <ul className="nav navbar-nav">
                <li className="active">
-                  <a href="#">Section 1</a>
+                  <Scrollchor to="#one">Section 1</Scrollchor>
                </li>
                <li>
-                  <a href="#">Section 2</a>
+                  <Scrollchor to="#two" animate={ {offset: 0, duration: 400} }>Section 2</Scrollchor>
                </li>
                <li>
-                  <a href="#">Section 3</a>
+                  <Scrollchor to="#three">Section 3</Scrollchor>
                </li>
             </ul>
          </div>
