@@ -8,13 +8,13 @@ const Navbar = () => {
          <div className="container-fluid">
             <ul className="nav navbar-nav">
                <li className="active">
-                  <Scrollchor to="#one">Section 1</Scrollchor>
+                  <Scrollchor to="#one" animate={ {duration: 600} }>Section 1</Scrollchor>
                </li>
                <li>
-                  <Scrollchor to="#two" animate={ {offset: 0, duration: 400} }>Section 2</Scrollchor>
+                  <Scrollchor to="#two" animate={ {duration: 600} }>Section 2</Scrollchor>
                </li>
                <li>
-                  <Scrollchor to="#three">Section 3</Scrollchor>
+                  <Scrollchor to="#three" animate={ {duration: 600} }>Section 3</Scrollchor>
                </li>
             </ul>
          </div>

@@ -21,6 +21,12 @@ const Main = () => (
       <div id='three'>
          <Section name="three" className="element"/>
       </div>
+      <footer>
+         <div className='container'>
+            <h2>Footer content here...</h2>
+         </div>
+
+      </footer>
    </div>
 )
 

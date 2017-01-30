@@ -29,7 +29,7 @@ $pink: #e90052;
 .section-three { background-color: rgb(255, 184, 0); }
 
 .section {
-   height: 600px;
+   height: 800px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -38,4 +38,8 @@ $pink: #e90052;
 .section-title {
    max-width: 50%;
    color: #fff;
+}
+
+footer {
+   text-align: center;
 }
