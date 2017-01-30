@@ -24,6 +24,29 @@ $pink: #e90052;
 /* Custom Styles
 -------------------------------------*/
 
+.header-section {
+   height: 350px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.header-section-title {
+   max-width: 50%;
+   color: black;
+   h1 {
+      font-size: 4em;
+   }
+}
+
+.sticky {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+
 .section-one { background-color: rgb(130, 191, 255); }
 .section-two { background-color: rgb(223, 82, 62); }
 .section-three { background-color: rgb(255, 184, 0); }
