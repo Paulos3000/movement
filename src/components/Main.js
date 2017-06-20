@@ -9,6 +9,7 @@ import Waypoint from 'react-waypoint';
 import Header from './Header'
 import Navbar from './Navbar'
 import Section from './Section'
+import About from './About'
 
 export default class Main extends Component {
 
@@ -41,23 +42,23 @@ export default class Main extends Component {
                <Header />
             </div>
 
-
             <Waypoint
                onEnter={handleWaypointEnter}
                onLeave={handleWaypointLeave}
             />
+
          <Navbar navIsSticky={this.state.navIsSticky}/>
 
             <div id='one'>
-               <Section name="one" className="element"/>
+               <About name="one" />
             </div>
 
             <div id='two'>
-               <Section name="two" className="element"/>
+               <Section name="two" className="element" />
             </div>
 
             <div id='three'>
-               <Section name="three" className="element"/>
+               <Section name="three" className="element" />
             </div>
 
             <footer>

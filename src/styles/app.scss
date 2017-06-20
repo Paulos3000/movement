@@ -1,68 +1,33 @@
-/* CSS Module imports
+/* GLOBAL
 -------------------------------------*/
-// @import url("./fonts.scss");
+@import "global/base";
+@import "global/variables";
+@import "global/mixins";
+@import "global/font-mixins";
 
-/* Colors
+/* COMPONENTS
 -------------------------------------*/
-$pink: #e90052;
+@import "components/header";
+@import "components/nav";
+@import "components/home";
+@import "components/elements";
+@import "components/products";
+@import "components/about";
+@import "components/contact";
 
-/* Standard Botstrap Fixes
--------------------------------------*/
-
-.jumbotron {
-   margin: 0;
-   h1 {
-      text-align: center;
-   }
-}
-
-.navbar {
-   text-align: center;
-   margin: 0;
-}
-
-/* Custom Styles
+/* Standard Bootstrap Fixes
 -------------------------------------*/
 
-.header-section {
-   height: 350px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.header-section-title {
-   max-width: 50%;
-   color: black;
-   h1 {
-      font-size: 4em;
-   }
-}
-
-.sticky {
-   position: fixed;
-   width: 100%;
-   top: 0;
-   left: 0;
-   opacity: 0.8;
-}
-
-.section-one { background-color: rgb(130, 191, 255); }
-.section-two { background-color: rgb(223, 82, 62); }
-.section-three { background-color: rgb(255, 184, 0); }
-
-.section {
-   height: 800px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.section-title {
-   max-width: 50%;
-   color: #fff;
-}
 
 footer {
    text-align: center;
 }
+
+// ---------------------------------
+
+// .header-section {
+//    z-index: 5;
+//    background-image: url('/img/test.jpg');
+//    background-position: 40% 0%;
+//    width: 100%;
+// }

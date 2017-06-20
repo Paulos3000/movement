@@ -1,0 +1,18 @@
+html {
+   font-size: 62.5%;
+}
+
+.about { background-color: rgb(130, 191, 255); }
+.section-two { background-color: rgb(223, 82, 62); }
+.section-three { background-color: rgb(255, 184, 0); }
+
+.section {
+   height: 800px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__title {
+
+   }
+}

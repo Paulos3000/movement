@@ -1,0 +1,24 @@
+// NAV
+
+.nav {
+
+   &__list {
+      display: inline-flex;
+   }
+
+   &__item {
+      font-size: 2rem;
+      text-decoration: none;
+      list-style-type: none;
+      padding-right: 2rem;
+   }
+
+   &.sticky {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+   }
+
+}
