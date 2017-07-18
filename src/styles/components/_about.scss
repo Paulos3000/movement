@@ -1,14 +1,65 @@
 // ABOUT
 
 .about {
-   height: 800px;
+
+   background-color: #82bfff;
+   color: #fff;
+   text-shadow: 0 0 5px rgba(black, 0.5);
+
+   position: relative;
+
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-end;
 
    &__title {
-      max-width: 50%;
-      color: #fff;
+
    }
-   
+
+   &__text-container {
+      font-size: 2rem;
+      width: 50%;
+      min-width: 60rem;
+      margin-right: 10rem;
+      position: relative;
+      z-index: 10;
+   }
+
+   &__point {
+
+      position:relative;
+
+      &:before {
+         content: '>';
+         position: absolute;
+         left: -2rem;
+      }
+
+   }
+
+   &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 300px;
+      background: linear-gradient(to bottom, rgba(130,191,255,1) 0%,rgba(255,255,255,1) 100%);
+   }
+
+}
+
+@include mq($until: tablet) {
+
+   .about {
+
+      &__text-container {
+         width: 100%;
+         min-width: inherit;
+         margin: 0;
+         padding: 0 5rem;
+      }
+
+   }
+
 }

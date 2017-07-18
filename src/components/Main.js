@@ -2,35 +2,44 @@ import React, { Component } from 'react'
 
 import Lorem from 'react-lorem-component';
 import Scrollchor from 'react-scrollchor';
-
 import Waypoint from 'react-waypoint';
 
 // import components...
 import Header from './Header'
-import Navbar from './Navbar'
-import Section from './Section'
+import Nav from './Nav'
 import About from './About'
+import Elements from './Elements'
+import Products from './Products'
+import Contact from './Contact'
 
 export default class Main extends Component {
 
    constructor(props) {
       super(props)
       this.state = {
-         navIsSticky: false
+         navIsSticky: false,
+         menuIsOpen: false
       }
    }
 
+   toggleMenu = () => {
+      console.log('flip burger');
+      this.setState({
+         menuIsOpen: !this.state.menuIsOpen
+      })
+   }
+ 
    render() {
 
       const handleWaypointEnter = () => {
          console.log('Non-sticky state')
          this.setState({
-            navIsSticky: false
+            navIsSticky: false,
          })
       }
 
       const handleWaypointLeave = () => {
-         console.log('Sticky state')
+         console.log('Sticky state');
          this.setState({
             navIsSticky: true
          })
@@ -38,6 +47,7 @@ export default class Main extends Component {
 
       return (
          <div className='app'>
+
             <div id='top'>
                <Header />
             </div>
@@ -47,18 +57,25 @@ export default class Main extends Component {
                onLeave={handleWaypointLeave}
             />
 
-         <Navbar navIsSticky={this.state.navIsSticky}/>
+         <Nav  navIsSticky={this.state.navIsSticky}
+               menuIsOpen={this.state.menuIsOpen}
+               toggleMenu={this.toggleMenu}
+         />
 
-            <div id='one'>
-               <About name="one" />
+            <div id='about'>
+               <About name="about" />
             </div>
 
-            <div id='two'>
-               <Section name="two" className="element" />
+            <div id='elements'>
+               <Elements name="elements" />
             </div>
 
-            <div id='three'>
-               <Section name="three" className="element" />
+            <div id='products'>
+               <Products name="products" />
+            </div>
+
+            <div id='contact'>
+               <Contact name="contact" />
             </div>
 
             <footer>

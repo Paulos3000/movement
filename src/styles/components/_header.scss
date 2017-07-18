@@ -3,14 +3,58 @@
 .header {
 
    margin: 0;
-   height: 350px;
+   height: 35rem;
    display: flex;
    align-items: center;
    justify-content: center;
+   letter-spacing: 3rem;
 
    &__title {
       text-align: center;
       font-size: 4em;
+      font-family: 'Abel', sans-serif;
+      text-transform: uppercase;
+   }
+
+}
+
+@include mq($until: desktop) {
+
+   .header {
+
+      &__title {
+         font-size: 5rem;
+      }
+
+   }
+
+}
+
+@include mq($until: tablet) {
+
+   .header {
+
+      height: 22rem;
+
+      &__title {
+         letter-spacing: 2rem;
+         font-size: 4rem;
+         margin: 0;
+      }
+
+   }
+
+}
+
+@include mq($until: phablet) {
+
+   .header {
+
+      &__title {
+         letter-spacing: 1rem;
+         font-size: 3rem;
+      }
+
    }
 
 }

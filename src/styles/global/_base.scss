@@ -2,17 +2,21 @@ html {
    font-size: 62.5%;
 }
 
-.about { background-color: rgb(130, 191, 255); }
-.section-two { background-color: rgb(223, 82, 62); }
-.section-three { background-color: rgb(255, 184, 0); }
-
-.section {
-   height: 800px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   &__title {
-
-   }
+h2 {
+   margin: 0;
 }
+
+.home,
+.about,
+.elements,
+.products,
+.contact {
+   min-height: 500px;
+   padding: 2rem;
+}
+
+// .about { background-color: rgb(130, 191, 255); }
+// // .elements { background-color: rgb(223, 82, 62); }
+// .elements { background-color: white; }
+// .products { background-color: rgb(255, 184, 0); }
+// .contact { background-color: rgb(199, 250, 167); }
