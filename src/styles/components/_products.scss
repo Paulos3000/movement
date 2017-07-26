@@ -65,3 +65,23 @@
    }
 
 }
+
+@include mq($until: tablet) {
+
+   .products {
+
+      padding: 0;
+
+      &__icon {
+
+         height: 15rem;
+
+         svg {
+            margin-top: -60px;
+         }
+
+      }
+
+   }
+
+}

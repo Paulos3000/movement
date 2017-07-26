@@ -18,32 +18,32 @@ export default class Main extends Component {
       super(props)
       this.state = {
          navIsSticky: false,
-         menuIsOpen: false
+         menuIsClosed: true
       }
    }
 
    toggleMenu = () => {
-      console.log('flip burger');
+      console.log('menu closed?', this.state.menuIsClosed)
       this.setState({
-         menuIsOpen: !this.state.menuIsOpen
+         menuIsClosed: !this.state.menuIsClosed
       })
    }
- 
+
+   handleWaypointEnter = () => {
+      console.log('sticky nav?', this.state.navIsSticky)
+      this.setState({
+         navIsSticky: false
+      })
+   }
+
+   handleWaypointLeave = () => {
+      console.log('sticky nav?', this.state.navIsSticky)
+      this.setState({
+         navIsSticky: true
+      })
+   }
+
    render() {
-
-      const handleWaypointEnter = () => {
-         console.log('Non-sticky state')
-         this.setState({
-            navIsSticky: false,
-         })
-      }
-
-      const handleWaypointLeave = () => {
-         console.log('Sticky state');
-         this.setState({
-            navIsSticky: true
-         })
-      }
 
       return (
          <div className='app'>
@@ -52,19 +52,16 @@ export default class Main extends Component {
                <Header />
             </div>
 
-            <Waypoint
-               onEnter={handleWaypointEnter}
-               onLeave={handleWaypointLeave}
+
+            <div id='about'></div>
+            <Waypoint onEnter={this.handleWaypointEnter} onLeave={this.handleWaypointLeave} />
+
+            <Nav  navIsSticky={this.state.navIsSticky}
+                  menuIsClosed={this.state.menuIsClosed}
+                  toggleMenu={this.toggleMenu}
             />
 
-         <Nav  navIsSticky={this.state.navIsSticky}
-               menuIsOpen={this.state.menuIsOpen}
-               toggleMenu={this.toggleMenu}
-         />
-
-            <div id='about'>
-               <About name="about" />
-            </div>
+            <About name="about" />
 
             <div id='elements'>
                <Elements name="elements" />

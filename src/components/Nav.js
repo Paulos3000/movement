@@ -2,7 +2,7 @@ import React from 'react'
 import Scrollchor from 'react-scrollchor';
 import classNames from 'classnames'
 
-const Nav = ({ navIsSticky, menuIsOpen, toggleMenu }) => {
+const Nav = ({ navIsSticky, menuIsClosed, toggleMenu }) => {
 
    let stickyClass = classNames({
       'sticky': navIsSticky,
@@ -10,8 +10,8 @@ const Nav = ({ navIsSticky, menuIsOpen, toggleMenu }) => {
     });
 
     let menuOpenClosed = classNames({
-      'menu-open': menuIsOpen,
-      '': !menuIsOpen,
+      'menu-closed': menuIsClosed,
+      '': !menuIsClosed,
     });
 
    return (
@@ -21,27 +21,29 @@ const Nav = ({ navIsSticky, menuIsOpen, toggleMenu }) => {
 
             <ul className="nav__list">
 
-               <div className={`nav__burger`} onClick={toggleMenu}>
-                  >
-               </div>
+               <li className={`nav__burger`} onClick={toggleMenu}>
+                  <span className="nav__burger-chevron">
+                     >
+                  </span>
+               </li>
 
-               <li className="nav__item">
+               <li className="nav__item" onClick={toggleMenu}>
                   <Scrollchor to="#top" animate={ {duration: 600} }>Home</Scrollchor>
                </li>
 
-               <li className="nav__item">
+               <li className="nav__item" onClick={toggleMenu}>
                   <Scrollchor to="#about" animate={ {duration: 600} }>About</Scrollchor>
                </li>
 
-               <li className="nav__item">
+               <li className="nav__item" onClick={toggleMenu}>
                   <Scrollchor to="#elements" animate={ {duration: 600} }>Elements</Scrollchor>
                </li>
 
-               <li className="nav__item">
+               <li className="nav__item" onClick={toggleMenu}>
                   <Scrollchor to="#products" animate={ {duration: 600} }>Products</Scrollchor>
                </li>
 
-               <li className="nav__item">
+               <li className="nav__item" onClick={toggleMenu}>
                   <Scrollchor to="#contact" animate={ {duration: 600} }>Contact</Scrollchor>
                </li>
 
