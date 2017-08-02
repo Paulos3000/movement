@@ -75,11 +75,11 @@ export default class Main extends Component {
                <Contact name="contact" />
             </div>
 
-            <footer>
+            {/*<footer>
                <div className='container'>
                   <h2>Footer content here...</h2>
                </div>
-            </footer>
+            </footer>*/}
 
          </div>
       )

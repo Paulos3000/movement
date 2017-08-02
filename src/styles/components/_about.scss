@@ -5,27 +5,32 @@
    background-color: rgb(232, 255, 253);
    color: white;
    text-shadow: 0 0 5px rgba($black, 0.8);
-
    position: relative;
-
+   padding: 4rem 2rem;
    display: flex;
    align-items: center;
    justify-content: flex-end;
+
+   .image-container:after {
+      background: linear-gradient(to right, rgba($black,0) 0%,rgba($black,1) 100%);
+   }
 
    &__title {
 
    }
 
    &__text-container {
-      font-size: 2rem;
-      width: 50%;
-      min-width: 60rem;
-      margin-right: 10rem;
+      font-size: 1.8rem;
+      width: 40%;
+      min-width: 50rem;
+      margin-right: 5rem;
       position: relative;
       z-index: 10;
    }
 
    &__point {
+
+      margin: 0 0 2rem;
 
       position:relative;
 
@@ -39,9 +44,46 @@
 
 }
 
+@include mq($until: desktop) {
+
+   .about {
+
+      &__text-container {
+         margin-right: 2rem;
+         min-width: 40rem;
+      }
+
+      .image-container {
+
+         img {
+            object-position: 30% 50%;
+         }
+
+         &:after {
+            background: linear-gradient(to right, rgba($black,0) 0%, rgba($black,0.5) 30%, rgba($black,1) 100%);
+         }
+
+      }
+
+   }
+
+}
+
 @include mq($until: tablet) {
 
    .about {
+
+      .image-container {
+
+         img {
+            object-position: right;
+         }
+
+         &:after {
+            background: rgba($black, 0.6);
+         }
+
+      }
 
       &__text-container {
          width: 100%;

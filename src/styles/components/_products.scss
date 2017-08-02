@@ -9,9 +9,13 @@
    text-shadow: 0 0 5px rgba(black, 0.5);
    flex-flow: wrap;
 
-   padding: 5rem 2rem;
+   padding: 2rem;
 
    position: relative;
+
+   .image-container:after {
+      background: rgba($black, 0.4);
+   }
 
    .image-container {
 
@@ -71,14 +75,12 @@
 
 }
 
-@include mq($until: tablet) {
+@include mq($from: tablet, $until: desktop) {
 
    .products {
 
-      &__item {
-
-         width: 100%;
-
+      &__caption {
+         font-size: 1.6rem;
       }
 
    }
@@ -89,16 +91,12 @@
 
    .products {
 
-      padding: 0;
+      &__item {
+         width: 100%;
+      }
 
-      &__icon {
-
-         height: 15rem;
-
-         svg {
-            margin-top: -60px;
-         }
-
+      &__caption {
+         font-size: 1.8rem;
       }
 
    }

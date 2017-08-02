@@ -2,6 +2,50 @@
 
 .contact {
 
-   background-color: rgb(199, 250, 167);
+   display: flex;
+   justify-content: space-around;
+
+   padding: 5rem 2rem;
+
+   .social-icon {
+
+      height: 5rem;
+      width: 5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 5rem;
+
+      &--email {
+         // color: red;
+      }
+
+      &--phone {
+         //  color: green;
+      }
+
+      &--instagram {
+         //  color: orange;
+      }
+
+      &--facebook {
+         //  color: blue;
+      }
+
+   }
+
+}
+
+@include mq($until: phablet) {
+
+   .contact {
+
+      .social-icon {
+         font-size: 4rem;
+      }
+
+   }
 
 }
