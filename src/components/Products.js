@@ -6,7 +6,9 @@ import MovementMasterSVG from './svg/products/MovementMasterSVG'
 
 const Products = ({ name }) => (
    <div className="products">
-      {/*<h2 className='products__title'>products</h2>*/}
+      <div className="image-container image-container--products">
+         <img src="/img/products-bg.jpg"></img>
+      </div>
       <div className="products__item">
          <div className="products__icon products__icon--education">
             <MoveEducationSVG />

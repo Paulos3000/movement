@@ -2,6 +2,9 @@
 
 .nav {
 
+   position: relative;
+   z-index: 50;
+
    &__structure {
       height: 4.6rem;
       width: 100%;
@@ -43,8 +46,11 @@
          color: white;
          text-shadow: 1px 1px 5px $black;
 
+         min-height: 32px;
+         opacity: 1;
+
          height: 0;
-         transition: min-height 0.5s;
+         transition: min-height 0.5s, opacity 0.3s;
       }
 
    }
@@ -126,9 +132,9 @@
             justify-content: center;
             align-items: center;
 
-            min-height: 32px;
-            opacity: 1;
-            transition: all 0.2s;
+            // min-height: 32px;
+            // opacity: 1;
+            // transition: all 0.2s;
          }
       }
 
