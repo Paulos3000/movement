@@ -3,14 +3,24 @@
 .contact {
 
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
 
-   padding: 5rem 2rem;
+   padding: 3rem 2rem;
 
    .social-icon {
 
+      padding: 0 6rem;
+
       height: 5rem;
       width: 5rem;
+      text-decoration: none;
+
+      color: #545454;
+      transition: color 0.25s;
+
+      &:hover {
+         color: $black;
+      }
 
       display: flex;
       justify-content: center;
@@ -24,6 +34,9 @@
 
       &--phone {
          //  color: green;
+         @include mq($from: phablet) {
+            display: none;
+         }
       }
 
       &--instagram {
@@ -38,12 +51,27 @@
 
 }
 
-@include mq($until: phablet) {
+@include mq($until: tablet) {
 
    .contact {
 
       .social-icon {
+         color: $black;
+      }
+
+   }
+
+}
+
+@include mq($until: phablet) {
+
+   .contact {
+
+      justify-content: space-around;
+
+      .social-icon {
          font-size: 4rem;
+         padding: 0;
       }
 
    }

@@ -3,6 +3,8 @@ import React from 'react'
 import FitnessSVG from './svg/elements/FitnessSVG'
 import LifestyleSVG from './svg/elements/LifestyleSVG'
 import NutritionSVG from './svg/elements/NutritionSVG'
+import MassageSVG from './svg/elements/MassageSVG'
+
 import MindsetSVG from './svg/elements/MindsetSVG'
 
 const Elements = ({ name }) => (
@@ -36,9 +38,9 @@ const Elements = ({ name }) => (
       </div>
       <div className="elements__item">
          <div className="elements__icon elements__icon--mindset">
-            <MindsetSVG />
+            <MassageSVG />
          </div>
-         <h2 className="elements__heading">Mindset</h2>
+         <h2 className="elements__heading">Massage</h2>
          <span className="elements__caption">
             Gradual changes in behaviour will make progressions sustainable. Become the master of your actions.
          </span>
