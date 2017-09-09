@@ -31,8 +31,8 @@
    &__mugshot-caption {
       font-size: 1.6rem;
       position: absolute;
-      bottom: 5rem;
-      left: 5rem;
+      bottom: 3rem;
+      left: 4rem;
    }
 
    &__point {
@@ -90,6 +90,10 @@
             background: rgba($black, 0.6);
          }
 
+      }
+
+      &__mugshot-caption {
+         display: none;
       }
 
       &__text-container {
