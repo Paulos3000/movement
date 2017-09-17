@@ -2,7 +2,7 @@ import React from 'react';
 
 const AahSVG = ( ) => (
 
-	<svg version="1.1" id="Layer_1" x="0px" y="0px"
+	<svg id="AAH_SVG" x="0px" y="0px"
 		 viewBox="0 0 100 100" enableBackground="new 0 0 100 100;">
 	{/*<style type="text/css">
 		.st0{fill:none;stroke:#666666;stroke-miterlimit:10;}

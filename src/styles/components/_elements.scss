@@ -38,6 +38,25 @@
       font-size: 2rem;
    }
 
+   #Massage_SVG {
+
+      .cls-1 {
+         fill: none;
+      }
+
+      .cls-2 {
+         fill: #fff;
+      }
+
+      .cls-1,
+      .cls-2 {
+         stroke: #666;
+         stroke-miterlimit: 10;
+         stroke-width: 2px;
+      }
+
+   }
+
 }
 
 @include mq($from: tablet, $until: desktop) {

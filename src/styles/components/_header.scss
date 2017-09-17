@@ -30,6 +30,17 @@
       font-size: 2rem;
    }
 
+   #AAH_SVG {
+
+   	.st0 {
+         fill: none;
+         stroke: #666666;
+         stroke-width: 1.2px;
+         stroke-miterlimit: 20;
+      }
+
+   }
+
 }
 
 @include mq($until: wide) {
