@@ -11,7 +11,7 @@ const About = ({ name }) => (
          <p className="about__point">Bespoke exercise and nutrition plans for each member</p>
          <p className="about__point">Further your education in nutrition and exercise and make healthy behaviours sustainable</p>
       </div>
-      <p className="about__mugshot-caption">Alexander Addison, Sports Gimp</p>
+      <p className="about__mugshot-caption">Alexander Addison, BA (Sport, Exercise and Physical Activity)</p>
    </div>
 )
 

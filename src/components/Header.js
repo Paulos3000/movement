@@ -8,7 +8,7 @@ const Header = () => (
          <AahSVG />
       </div>
       <h1 className='header__title'>Alexander Addison Health</h1>
-      <h3 className='header__subtitle'>Nutrition Coaching | Sports Massage | Something Else</h3>
+      <h3 className='header__subtitle'>Personal Trainer | Nutrition Coach | Sports Masseur</h3>
    </div>
 )
 

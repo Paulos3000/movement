@@ -42,7 +42,7 @@ const Elements = ({ name }) => (
          </div>
          <h2 className="elements__heading">Massage</h2>
          <span className="elements__caption">
-            Gradual changes in behaviour will make progressions sustainable. Become the master of your actions.
+            Alleviate stress and recover faster with sports massages that use holistic and deep tissue techniques, for those tighter muscles.
          </span>
       </div>
    </div>
