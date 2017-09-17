@@ -15,7 +15,7 @@ const Products = ({ name }) => (
          </div>
          <h2 className="products__heading">Move Education</h2>
          <span className="products__caption">
-            Exercise should not be mundane, nor a chore. We aim to expose each member to different ways of exercising that stimulate the mind and challenge the body.
+            4-week programme providing basic education of nutrition and principles of movement.
          </span>
       </div>
       <div className="products__item">
@@ -24,7 +24,7 @@ const Products = ({ name }) => (
          </div>
          <h2 className="products__heading">Mover And Shaker</h2>
          <span className="products__caption">
-            Improve life choice that will impact your health positively whilst maintaining your sense of self.
+            12-week programme cementing the foundations and moving the body in new ways, becoming stronger and healthier.
          </span>
       </div>
       <div className="products__item">
@@ -33,7 +33,7 @@ const Products = ({ name }) => (
          </div>
          <h2 className="products__heading">Movement Master</h2>
          <span className="products__caption">
-            Move your taste buds. Become more educated on nutritional and healtheir food alternatives. Become a nutrition maestro.
+            6-month programme creating long term strategies to maintain progress and create a platform for lifelong health.
          </span>
       </div>
    </div>
