@@ -7,7 +7,7 @@ import MovementMasterSVG from './svg/products/MovementMasterSVG'
 const Products = ({ name }) => (
    <div className="products">
       <div className="image-container image-container--products">
-         <img src="/img/products-bg.jpg"></img>
+         <img src="/img/products-bg.jpg" lazyload></img>
       </div>
       <div className="products__item">
          <div className="products__icon products__icon--education">
