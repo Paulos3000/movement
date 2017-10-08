@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LifestyleSVG = ( ) => (
-   <svg version="1.1" id="Layer_1" x="0px" y="0px"
+   <svg version="1.1" id="Lifestyle_SVG" x="0px" y="0px"
    	 width="320px" height="320px" viewBox="0 0 320 320" enableBackground="new 0 0 320 320">
    <g>
    	<path fillRule="evenodd" clipRule="evenodd" fill="none" stroke="#000" strokeWidth="4" strokeMiterlimit="10" d="

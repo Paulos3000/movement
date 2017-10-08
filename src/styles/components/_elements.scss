@@ -50,9 +50,10 @@
 
       .cls-1,
       .cls-2 {
-         stroke: #666;
+         // stroke: #666;
+         stroke: #000;
          stroke-miterlimit: 10;
-         stroke-width: 2px;
+         stroke-width: 1px;
       }
 
    }

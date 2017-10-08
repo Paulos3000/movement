@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FitnessSVG = ( ) => (
-   <svg version="1.1" id="Layer_1" x="0px" y="0px"
+   <svg version="1.1" id="Fitness_SVG" x="0px" y="0px"
           width="320px" height="320px" viewBox="0 0 320 320" enableBackground="new 0 0 320 320">
        <g>
        	<path className="path" fill="none" stroke="#000" strokeWidth="4" strokeMiterlimit="10" d="M244.1,63.6h-36.6c0,0-18.3,16.8-29,50.2h-37.1c-10.7-33.5-29-50.2-29-50.2H75.9c0,0-36.6,33.5-36.6,100.4

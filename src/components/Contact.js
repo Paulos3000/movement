@@ -12,7 +12,7 @@ const Contact = ({ name }) => (
       <a href="https://www.instagram.com/alexanderaddisonhealth/" target="_blank" className="social-icon social-icon--instagram">
          <i className="fa fa-instagram"></i>
       </a>
-      <a href="https://www.facebook.com/alex.addison.16" target="_blank" className="social-icon social-icon--facebook">
+      <a href="https://www.facebook.com/alexanderaddisonhealth/" target="_blank" className="social-icon social-icon--facebook">
          <i className="fa fa-facebook-square"></i>
       </a>
 
